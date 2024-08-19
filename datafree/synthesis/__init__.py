@@ -1,0 +1,1 @@
+from .coboost import COBOOSTSynthesizer

@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=3 python datafree_kd.py \
+--method co_boosting \
+--dataset mnist \
+--fl_model 'mnist_clients3_iid1.0_sig0.0_lenet_Llr0.01_Le1_seed42' \
+--batch_size 128 \
+--teacher lenet \
+--student lenet \
+--kd_lr 0.01 \
+--epochs 5 \
+--g_steps 10 \
+--lr_g 1e-3 \
+--seed 42 \
+--print_freq 1
